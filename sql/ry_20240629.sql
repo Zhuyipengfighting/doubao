@@ -27,16 +27,16 @@ create table sys_dept (
 -- ----------------------------
 -- 初始化-部门表数据
 -- ----------------------------
-insert into sys_dept values(100,  0,   '0',          '若依科技',   0, '若依', '15888888888', 'ry@qq.com', '0', '0', 'admin', sysdate(), '', null);
-insert into sys_dept values(101,  100, '0,100',      '深圳总公司', 1, '若依', '15888888888', 'ry@qq.com', '0', '0', 'admin', sysdate(), '', null);
-insert into sys_dept values(102,  100, '0,100',      '长沙分公司', 2, '若依', '15888888888', 'ry@qq.com', '0', '0', 'admin', sysdate(), '', null);
-insert into sys_dept values(103,  101, '0,100,101',  '研发部门',   1, '若依', '15888888888', 'ry@qq.com', '0', '0', 'admin', sysdate(), '', null);
-insert into sys_dept values(104,  101, '0,100,101',  '市场部门',   2, '若依', '15888888888', 'ry@qq.com', '0', '0', 'admin', sysdate(), '', null);
-insert into sys_dept values(105,  101, '0,100,101',  '测试部门',   3, '若依', '15888888888', 'ry@qq.com', '0', '0', 'admin', sysdate(), '', null);
-insert into sys_dept values(106,  101, '0,100,101',  '财务部门',   4, '若依', '15888888888', 'ry@qq.com', '0', '0', 'admin', sysdate(), '', null);
-insert into sys_dept values(107,  101, '0,100,101',  '运维部门',   5, '若依', '15888888888', 'ry@qq.com', '0', '0', 'admin', sysdate(), '', null);
-insert into sys_dept values(108,  102, '0,100,102',  '市场部门',   1, '若依', '15888888888', 'ry@qq.com', '0', '0', 'admin', sysdate(), '', null);
-insert into sys_dept values(109,  102, '0,100,102',  '财务部门',   2, '若依', '15888888888', 'ry@qq.com', '0', '0', 'admin', sysdate(), '', null);
+insert into sys_dept values(100,  0,   '0',          '智联科技',   0, '智联', '15888888888', 'db@qq.com', '0', '0', 'admin', sysdate(), '', null);
+insert into sys_dept values(101,  100, '0,100',      '深圳总公司', 1, '智联', '15888888888', 'db@qq.com', '0', '0', 'admin', sysdate(), '', null);
+insert into sys_dept values(102,  100, '0,100',      '长沙分公司', 2, '智联', '15888888888', 'db@qq.com', '0', '0', 'admin', sysdate(), '', null);
+insert into sys_dept values(103,  101, '0,100,101',  '研发部门',   1, '智联', '15888888888', 'db@qq.com', '0', '0', 'admin', sysdate(), '', null);
+insert into sys_dept values(104,  101, '0,100,101',  '市场部门',   2, '智联', '15888888888', 'db@qq.com', '0', '0', 'admin', sysdate(), '', null);
+insert into sys_dept values(105,  101, '0,100,101',  '测试部门',   3, '智联', '15888888888', 'db@qq.com', '0', '0', 'admin', sysdate(), '', null);
+insert into sys_dept values(106,  101, '0,100,101',  '财务部门',   4, '智联', '15888888888', 'db@qq.com', '0', '0', 'admin', sysdate(), '', null);
+insert into sys_dept values(107,  101, '0,100,101',  '运维部门',   5, '智联', '15888888888', 'db@qq.com', '0', '0', 'admin', sysdate(), '', null);
+insert into sys_dept values(108,  102, '0,100,102',  '市场部门',   1, '智联', '15888888888', 'db@qq.com', '0', '0', 'admin', sysdate(), '', null);
+insert into sys_dept values(109,  102, '0,100,102',  '财务部门',   2, '智联', '15888888888', 'db@qq.com', '0', '0', 'admin', sysdate(), '', null);
 
 
 -- ----------------------------
@@ -69,8 +69,8 @@ create table sys_user (
 -- ----------------------------
 -- 初始化-用户信息表数据
 -- ----------------------------
-insert into sys_user values(1,  103, 'admin', '若依', '00', 'ry@163.com', '15888888888', '1', '', '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2', '0', '0', '127.0.0.1', sysdate(), 'admin', sysdate(), '', null, '管理员');
-insert into sys_user values(2,  105, 'ry',    '若依', '00', 'ry@qq.com',  '15666666666', '1', '', '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2', '0', '0', '127.0.0.1', sysdate(), 'admin', sysdate(), '', null, '测试员');
+insert into sys_user values(1,  103, 'admin', '智联', '00', 'db@163.com', '15888888888', '1', '', '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2', '0', '0', '127.0.0.1', sysdate(), 'admin', sysdate(), '', null, '管理员');
+insert into sys_user values(2,  105, 'db',    '智联', '00', 'db@qq.com',  '15666666666', '1', '', '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2', '0', '0', '127.0.0.1', sysdate(), 'admin', sysdate(), '', null, '测试员');
 
 
 -- ----------------------------
@@ -165,7 +165,7 @@ create table sys_menu (
 insert into sys_menu values('1', '系统管理', '0', '1', 'system',           null, '', '', 1, 0, 'M', '0', '0', '', 'system',   'admin', sysdate(), '', null, '系统管理目录');
 insert into sys_menu values('2', '系统监控', '0', '2', 'monitor',          null, '', '', 1, 0, 'M', '0', '0', '', 'monitor',  'admin', sysdate(), '', null, '系统监控目录');
 insert into sys_menu values('3', '系统工具', '0', '3', 'tool',             null, '', '', 1, 0, 'M', '0', '0', '', 'tool',     'admin', sysdate(), '', null, '系统工具目录');
-insert into sys_menu values('4', '若依官网', '0', '4', 'http://ruoyi.vip', null, '', '', 0, 0, 'M', '0', '0', '', 'guide',    'admin', sysdate(), '', null, '若依官网地址');
+insert into sys_menu values('4', '哔哩哔哩', '0', '4', 'https://www.bilibili.com/', null, '', '', 0, 0, 'M', '0', '0', '', 'guide',    'admin', sysdate(), '', null, '哔哩哔哩官网地址');
 -- 二级菜单
 insert into sys_menu values('100',  '用户管理', '1',   '1', 'user',       'system/user/index',        '', '', 1, 0, 'C', '0', '0', 'system:user:list',        'user',          'admin', sysdate(), '', null, '用户管理菜单');
 insert into sys_menu values('101',  '角色管理', '1',   '2', 'role',       'system/role/index',        '', '', 1, 0, 'C', '0', '0', 'system:role:list',        'peoples',       'admin', sysdate(), '', null, '角色管理菜单');
@@ -597,9 +597,9 @@ create table sys_job (
                          primary key (job_id, job_name, job_group)
 ) engine=innodb auto_increment=100 comment = '定时任务调度表';
 
-insert into sys_job values(1, '系统默认（无参）', 'DEFAULT', 'ryTask.ryNoParams',        '0/10 * * * * ?', '3', '1', '1', 'admin', sysdate(), '', null, '');
-insert into sys_job values(2, '系统默认（有参）', 'DEFAULT', 'ryTask.ryParams(\'ry\')',  '0/15 * * * * ?', '3', '1', '1', 'admin', sysdate(), '', null, '');
-insert into sys_job values(3, '系统默认（多参）', 'DEFAULT', 'ryTask.ryMultipleParams(\'ry\', true, 2000L, 316.50D, 100)',  '0/20 * * * * ?', '3', '1', '1', 'admin', sysdate(), '', null, '');
+insert into sys_job values(1, '系统默认（无参）', 'DEFAULT', 'dbTask.dbNoParams',        '0/10 * * * * ?', '3', '1', '1', 'admin', sysdate(), '', null, '');
+insert into sys_job values(2, '系统默认（有参）', 'DEFAULT', 'dbTask.dbParams(\'db\')',  '0/15 * * * * ?', '3', '1', '1', 'admin', sysdate(), '', null, '');
+insert into sys_job values(3, '系统默认（多参）', 'DEFAULT', 'dbTask.dbMultipleParams(\'db\', true, 2000L, 316.50D, 100)',  '0/20 * * * * ?', '3', '1', '1', 'admin', sysdate(), '', null, '');
 
 
 -- ----------------------------
@@ -640,8 +640,8 @@ create table sys_notice (
 -- ----------------------------
 -- 初始化-公告信息表数据
 -- ----------------------------
-insert into sys_notice values('1', '温馨提醒：2018-07-01 若依新版本发布啦', '2', '新版本内容', '0', 'admin', sysdate(), '', null, '管理员');
-insert into sys_notice values('2', '维护通知：2018-07-01 若依系统凌晨维护', '1', '维护内容',   '0', 'admin', sysdate(), '', null, '管理员');
+insert into sys_notice values('1', '温馨提醒：2025-03-01 新版本发布啦', '2', '新版本内容', '0', 'admin', sysdate(), '', null, '管理员');
+insert into sys_notice values('2', '维护通知：2025-03-02 系统凌晨维护', '1', '维护内容',   '0', 'admin', sysdate(), '', null, '管理员');
 
 
 -- ----------------------------
@@ -703,3 +703,147 @@ create table gen_table_column (
                                   update_time       datetime                                   comment '更新时间',
                                   primary key (column_id)
 ) engine=innodb auto_increment=1 comment = '代码生成业务表字段';
+
+
+-- 商品表
+drop table if exists sys_product;
+create table sys_product (
+                             product_id      bigint(20)    not null auto_increment      comment '商品ID',
+                             product_name    varchar(100)  not null                     comment '商品名称',
+                             product_desc    text          default null                 comment '商品描述',
+                             category_id     bigint(20)    not null                     comment '分类ID',
+                             brand_id        bigint(20)    default null                 comment '品牌ID',
+                             supplier_id     INT UNSIGNED NOT NULL                      comment '商品的供应商ID',
+                             price          decimal(10,2)  not null                     comment '商品价格',
+                             stock           int(10)       not null default 0           comment '库存数量',
+                             status          tinyint(1)    default 1                    comment '商品状态（1上架 0下架）',
+                             del_flag        tinyint(1)    default 0                    comment '删除标志（0正常 1删除）',
+                             create_time     datetime      default current_timestamp    comment '创建时间',
+                             update_time     datetime      default current_timestamp on update current_timestamp comment '更新时间',
+                             primary key (product_id),
+                             index idx_category (category_id),
+                             index idx_brand (brand_id),
+                             index idx_status (status)
+) engine=innodb auto_increment=1000 comment = '商品信息表';
+
+
+-- 初始化商品表
+INSERT INTO sys_product (
+    product_name, product_desc, category_id, brand_id, supplier_id, price, stock, status, del_flag
+) VALUES
+      ('商品A', '商品A的描述', 1, 1, 101, 99.99, 100, 1, 0),
+      ('商品B', '商品B的描述', 2, 2, 102, 199.99, 50, 1, 0),
+      ('商品C', '商品C的描述', 3, 3, 103, 299.99, 200, 1, 0);
+
+
+
+-- 订单表
+drop table if exists sys_order;
+create table sys_order (
+                           order_id        bigint(20)     not null auto_increment       comment '订单ID',
+                           user_id         bigint(20)     not null                      comment '用户ID',
+                           total_price     decimal(10,2)  not null                      comment '订单总金额',
+                           pay_status      tinyint    default 0                         comment '支付状态（0未支付 1已支付 2已退款）',
+                           order_status    tinyint    default 0                         comment '订单状态（0待支付 1待发货 2已发货 3已完成 4已取消）',
+                           pay_method      varchar(20)  not null                        comment '支付方式（支付宝、微信、信用卡等）',
+                           pay_time        datetime       default null                  comment '支付时间',
+                           cancel_time     datetime       default null                  comment '取消时间',
+                           create_time     datetime       default current_timestamp     comment '订单创建时间',
+                           update_time     datetime       default current_timestamp on update current_timestamp comment '订单更新时间',
+                           primary key (order_id),
+                           index idx_user (user_id),
+                           index idx_status (order_status),
+                           index idx_pay_status (pay_status)
+) engine=innodb auto_increment=10000 comment = '订单表';
+
+
+-- 初始化
+INSERT INTO sys_order (
+    user_id, total_price, pay_status, order_status, pay_method, pay_time, cancel_time
+) VALUES
+      (1, 399.97, 1, 1, '支付宝', '2025-03-03 10:00:00', NULL),
+      (2, 199.99, 0, 0, '微信', NULL, NULL),
+      (1, 899.97, 2, 4, '信用卡', '2025-03-03 11:00:00', '2025-03-03 12:00:00');
+
+
+-- 订单（商品）
+drop table if exists sys_order_item;
+create table sys_order_item (
+                                item_id        bigint(20)     not null auto_increment comment '订单项ID',
+                                order_id       bigint(20)     not null comment '订单ID',
+                                product_id     bigint(20)     not null comment '商品ID',
+                                product_name   varchar(100)   not null comment '商品名称',
+                                price          decimal(10,2)  not null comment '商品单价',
+                                quantity       int(10)        not null comment '购买数量',
+                                total_price    decimal(10,2)  not null comment '该商品总价',
+                                create_time    datetime       default current_timestamp comment '创建时间',
+                                update_time    datetime       default current_timestamp on update current_timestamp comment '更新时间',
+                                primary key (item_id),
+                                index idx_order (order_id),
+                                index idx_product (product_id)
+) engine=innodb auto_increment=10000 comment = '订单商品表';
+
+
+-- 初始化
+INSERT INTO sys_order_item (
+    order_id, product_id, product_name, price, quantity, total_price
+) VALUES
+      (1001, 1, '商品A', 99.99, 2, 199.98),
+      (1002, 2, '商品B', 199.99, 1, 199.99),
+      (1003, 3, '商品C', 299.99, 3, 899.97);
+
+
+-- 购物车
+drop table if exists sys_cart;
+create table sys_cart (
+                          cart_id       bigint(20)    not null auto_increment comment '购物车ID',
+                          user_id       bigint(20)    not null comment '用户ID',
+                          product_id    bigint(20)    not null comment '商品ID',
+                          quantity      int(10)       not null default 1 comment '商品购买数量',
+                          create_time   datetime      default current_timestamp comment '加入购物车时间',
+                          update_time   datetime      default current_timestamp on update current_timestamp comment '更新时间',
+                          primary key (cart_id),
+                          unique key uk_user_product (user_id, product_id),
+--                        确保用户购物车里不会有相同商品的多条记录，而是数量累加
+                          index idx_user (user_id)
+) engine=innodb auto_increment=100000 comment = '购物车表';
+
+-- 初始化
+INSERT INTO sys_cart (
+    user_id, product_id, quantity
+) VALUES
+      (1, 1, 2),
+      (2, 2, 1),
+      (1, 3, 3);
+
+
+-- 再复杂一点，商品有没有选中（但是我不想弄太复杂）
+-- -----------------------------------------------------------------------
+
+-- 以上为基础表，下面为大概可能补充
+-- 地址
+create table sys_user_address (
+                                  address_id    bigint(20)   not null auto_increment comment '地址ID',
+                                  user_id       bigint(20)   not null comment '用户ID',
+                                  receiver_name varchar(50)  not null comment '收货人姓名',
+                                  phone         varchar(11)  not null comment '收货人手机号',
+                                  province      varchar(50)  not null comment '省份',
+                                  city          varchar(50)  not null comment '城市',
+                                  district      varchar(50)  not null comment '区县',
+                                  detail        varchar(200) not null comment '详细地址',
+                                  is_default    tinyint(1)   default 0 comment '是否默认地址（0否 1是）',
+                                  create_time   datetime     default current_timestamp comment '创建时间',
+                                  update_time   datetime     default current_timestamp on update current_timestamp comment '更新时间',
+                                  primary key (address_id),
+                                  index idx_user (user_id)
+) engine=innodb auto_increment=1000 comment='用户地址表';
+
+-- 分类补充
+create table sys_product_category (
+                                      category_id   bigint(20)   not null auto_increment comment '分类ID',
+                                      category_name varchar(50)  not null comment '分类名称',
+                                      parent_id     bigint(20)   default null comment '父分类ID（NULL表示顶级分类）',
+                                      create_time   datetime     default current_timestamp comment '创建时间',
+                                      update_time   datetime     default current_timestamp on update current_timestamp comment '更新时间',
+                                      primary key (category_id)
+) engine=innodb auto_increment=1000 comment='商品分类表';
