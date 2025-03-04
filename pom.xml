@@ -192,6 +192,9 @@
         <module>doubao-quartz</module>
         <module>doubao-generator</module>
         <module>doubao-common</module>
+        <module>doubao-goods</module>
+
+        <module>doubao-shoppingcart</module>
     </modules>
     <packaging>pom</packaging>
 
