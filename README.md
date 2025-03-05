@@ -1,96 +1,176 @@
-<p align="center">
-	<img alt="logo" src="https://oscimg.oschina.net/oscnet/up-d3d0a9303e11d522a06cd263f3079027715.png">
-</p>
-<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">RuoYi v3.8.8</h1>
-<h4 align="center">基于SpringBoot+Vue前后端分离的Java快速开发框架</h4>
-<p align="center">
-	<a href="https://gitee.com/y_project/RuoYi-Vue/stargazers"><img src="https://gitee.com/y_project/RuoYi-Vue/badge/star.svg?theme=dark"></a>
-	<a href="https://gitee.com/y_project/RuoYi-Vue"><img src="https://img.shields.io/badge/RuoYi-v3.8.8-brightgreen.svg"></a>
-	<a href="https://gitee.com/y_project/RuoYi-Vue/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
-</p>
-
-## 平台简介
-
-若依是一套全部开源的快速开发平台，毫无保留给个人及企业免费使用。
-
-* 前端采用Vue、Element UI。
-* 后端采用Spring Boot、Spring Security、Redis & Jwt。
-* 权限认证使用Jwt，支持多终端认证系统。
-* 支持加载动态权限菜单，多方式轻松权限控制。
-* 高效率开发，使用代码生成器可以一键生成前后端代码。
-* 提供了技术栈（[Vue3](https://v3.cn.vuejs.org) [Element Plus](https://element-plus.org/zh-CN) [Vite](https://cn.vitejs.dev)）版本[RuoYi-Vue3](https://github.com/yangzongzhuan/RuoYi-Vue3)，保持同步更新。
-* 提供了单应用版本[RuoYi-Vue-fast](https://github.com/yangzongzhuan/RuoYi-Vue-fast)，Oracle版本[RuoYi-Vue-Oracle](https://github.com/yangzongzhuan/RuoYi-Vue-Oracle)，保持同步更新。
-* 不分离版本，请移步[RuoYi](https://gitee.com/y_project/RuoYi)，微服务版本，请移步[RuoYi-Cloud](https://gitee.com/y_project/RuoYi-Cloud)
-* 阿里云折扣场：[点我进入](http://aly.ruoyi.vip)，腾讯云秒杀场：[点我进入](http://txy.ruoyi.vip)&nbsp;&nbsp;
-* 阿里云优惠券：[点我领取](https://www.aliyun.com/minisite/goods?userCode=brki8iof&share_source=copy_link)，腾讯云优惠券：[点我领取](https://cloud.tencent.com/redirect.php?redirect=1025&cps_key=198c8df2ed259157187173bc7f4f32fd&from=console)&nbsp;&nbsp;
-
-## 内置功能
-
-1.  用户管理：用户是系统操作者，该功能主要完成系统用户配置。
-2.  部门管理：配置系统组织机构（公司、部门、小组），树结构展现支持数据权限。
-3.  岗位管理：配置系统用户所属担任职务。
-4.  菜单管理：配置系统菜单，操作权限，按钮权限标识等。
-5.  角色管理：角色菜单权限分配、设置角色按机构进行数据范围权限划分。
-6.  字典管理：对系统中经常使用的一些较为固定的数据进行维护。
-7.  参数管理：对系统动态配置常用参数。
-8.  通知公告：系统通知公告信息发布维护。
-9.  操作日志：系统正常操作日志记录和查询；系统异常信息日志记录和查询。
-10. 登录日志：系统登录日志记录查询包含登录异常。
-11. 在线用户：当前系统中活跃用户状态监控。
-12. 定时任务：在线（添加、修改、删除)任务调度包含执行结果日志。
-13. 代码生成：前后端代码的生成（java、html、xml、sql）支持CRUD下载 。
-14. 系统接口：根据业务代码自动生成相关的api接口文档。
-15. 服务监控：监视当前系统CPU、内存、磁盘、堆栈等相关信息。
-16. 缓存监控：对系统的缓存信息查询，命令统计等。
-17. 在线构建器：拖动表单元素生成相应的HTML代码。
-18. 连接池监视：监视当前系统数据库连接池状态，可进行分析SQL找出系统性能瓶颈。
-
-## 在线体验
-
-- admin/admin123  
-- 陆陆续续收到一些打赏，为了更好的体验已用于演示服务器升级。谢谢各位小伙伴。
-
-演示地址：http://vue.ruoyi.vip  
-文档地址：http://doc.ruoyi.vip
-
-## 演示图
-
-<table>
-    <tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/cd1f90be5f2684f4560c9519c0f2a232ee8.jpg"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/1cbcf0e6f257c7d3a063c0e3f2ff989e4b3.jpg"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-8074972883b5ba0622e13246738ebba237a.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-9f88719cdfca9af2e58b352a20e23d43b12.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-39bf2584ec3a529b0d5a3b70d15c9b37646.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-936ec82d1f4872e1bc980927654b6007307.png"/></td>
-    </tr>
-	<tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-b2d62ceb95d2dd9b3fbe157bb70d26001e9.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-d67451d308b7a79ad6819723396f7c3d77a.png"/></td>
-    </tr>	 
-    <tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/5e8c387724954459291aafd5eb52b456f53.jpg"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/644e78da53c2e92a95dfda4f76e6d117c4b.jpg"/></td>
-    </tr>
-	<tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-8370a0d02977eebf6dbf854c8450293c937.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-49003ed83f60f633e7153609a53a2b644f7.png"/></td>
-    </tr>
-	<tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-d4fe726319ece268d4746602c39cffc0621.png"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-c195234bbcd30be6927f037a6755e6ab69c.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://oscimg.oschina.net/oscnet/b6115bc8c31de52951982e509930b20684a.jpg"/></td>
-        <td><img src="https://oscimg.oschina.net/oscnet/up-5e4daac0bb59612c5038448acbcef235e3a.png"/></td>
-    </tr>
-</table>
+> # GitHub仓库使用规范
 
 
-## 若依前后端分离交流群
 
-QQ群： [![加入QQ群](https://img.shields.io/badge/已满-937441-blue.svg)](https://jq.qq.com/?_wv=1027&k=5bVB1og) [![加入QQ群](https://img.shields.io/badge/已满-887144332-blue.svg)](https://jq.qq.com/?_wv=1027&k=5eiA4DH) [![加入QQ群](https://img.shields.io/badge/已满-180251782-blue.svg)](https://jq.qq.com/?_wv=1027&k=5AxMKlC) [![加入QQ群](https://img.shields.io/badge/已满-104180207-blue.svg)](https://jq.qq.com/?_wv=1027&k=51G72yr) [![加入QQ群](https://img.shields.io/badge/已满-186866453-blue.svg)](https://jq.qq.com/?_wv=1027&k=VvjN2nvu) [![加入QQ群](https://img.shields.io/badge/已满-201396349-blue.svg)](https://jq.qq.com/?_wv=1027&k=5vYAqA05) [![加入QQ群](https://img.shields.io/badge/已满-101456076-blue.svg)](https://jq.qq.com/?_wv=1027&k=kOIINEb5) [![加入QQ群](https://img.shields.io/badge/已满-101539465-blue.svg)](https://jq.qq.com/?_wv=1027&k=UKtX5jhs) [![加入QQ群](https://img.shields.io/badge/已满-264312783-blue.svg)](https://jq.qq.com/?_wv=1027&k=EI9an8lJ) [![加入QQ群](https://img.shields.io/badge/已满-167385320-blue.svg)](https://jq.qq.com/?_wv=1027&k=SWCtLnMz) [![加入QQ群](https://img.shields.io/badge/已满-104748341-blue.svg)](https://jq.qq.com/?_wv=1027&k=96Dkdq0k) [![加入QQ群](https://img.shields.io/badge/已满-160110482-blue.svg)](https://jq.qq.com/?_wv=1027&k=0fsNiYZt) [![加入QQ群](https://img.shields.io/badge/已满-170801498-blue.svg)](https://jq.qq.com/?_wv=1027&k=7xw4xUG1) [![加入QQ群](https://img.shields.io/badge/已满-108482800-blue.svg)](https://jq.qq.com/?_wv=1027&k=eCx8eyoJ) [![加入QQ群](https://img.shields.io/badge/已满-101046199-blue.svg)](https://jq.qq.com/?_wv=1027&k=SpyH2875) [![加入QQ群](https://img.shields.io/badge/已满-136919097-blue.svg)](https://jq.qq.com/?_wv=1027&k=tKEt51dz) [![加入QQ群](https://img.shields.io/badge/已满-143961921-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=0vBbSb0ztbBgVtn3kJS-Q4HUNYwip89G&authKey=8irq5PhutrZmWIvsUsklBxhj57l%2F1nOZqjzigkXZVoZE451GG4JHPOqW7AW6cf0T&noverify=0&group_code=143961921) [![加入QQ群](https://img.shields.io/badge/已满-174951577-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ZFAPAbp09S2ltvwrJzp7wGlbopsc0rwi&authKey=HB2cxpxP2yspk%2Bo3WKTBfktRCccVkU26cgi5B16u0KcAYrVu7sBaE7XSEqmMdFQp&noverify=0&group_code=174951577) [![加入QQ群](https://img.shields.io/badge/已满-161281055-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Fn2aF5IHpwsy8j6VlalNJK6qbwFLFHat&authKey=uyIT%2B97x2AXj3odyXpsSpVaPMC%2Bidw0LxG5MAtEqlrcBcWJUA%2FeS43rsF1Tg7IRJ&noverify=0&group_code=161281055) [![加入QQ群](https://img.shields.io/badge/已满-138988063-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=XIzkm_mV2xTsUtFxo63bmicYoDBA6Ifm&authKey=dDW%2F4qsmw3x9govoZY9w%2FoWAoC4wbHqGal%2BbqLzoS6VBarU8EBptIgPKN%2FviyC8j&noverify=0&group_code=138988063) [![加入QQ群](https://img.shields.io/badge/151450850-blue.svg)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=DkugnCg68PevlycJSKSwjhFqfIgrWWwR&authKey=pR1Pa5lPIeGF%2FFtIk6d%2FGB5qFi0EdvyErtpQXULzo03zbhopBHLWcuqdpwY241R%2F&noverify=0&group_code=151450850) 点击按钮入群。
+## 开始之前
+
+1. 关于markdown
+
+Markdown是一种优秀的标记语言，其文件后缀名为 .md 。Markdown兼容html语言的同时，又简化了标记语言的编写，使得用户可以以更容易的形式作出多种有优秀观感的文档。当前，市面上常用该语言作日常学习笔记、说明文档（如常见的redeme.md）和代码接口文档等。
+
+当下，优秀的阅读、编写markdown的软件有：Typora和VSCode；能凑合着用的有：Jetbrains系列IDE；VSCode和Jetbrains系列IDE中自行搜索下载相关markdown插件即可，Typora可付费也可寻找破解版使用。
+
+Markdown将会在今后的编程过程中经常使用，其编写十分容易，有关其语法可见[Markdown 基本语法 | Markdown 官方教程](https://markdown.com.cn/basic-syntax/)，结合其中的基本语法和在线编辑器中的事例一同食用。
+
+2. 关于GitHub
+
+遵循一定的仓库规范后，才更能了解每一个人的工作完成进度噢，便于后续的调错、开发！若有不规范之处，仓库有拒收、回滚的权利。
+
+3. 关于文件夹
+
+若对某一文件夹或其中的文件需要作出一定解释，请在适当位置处写出Markdown说明文档，命名为readme.md，以便他人阅读~
+
+4. 关于git的使用流程
+
+本次开发过程中，将会使用git进行版本控制，可使用git或是github官方的图形化软件GitHub Desktop（效果是一样的，但是我个人认为GitHub Desktop的学习成本更低）。
+
+一般情况下，每一个人都有自己的分支，总体产品会有一个分支，日常使用过程中仅在自己的分支中作业即可，但是：
+
+- 版本更新后，首先从远程的master分支中**拉取**最新的代码到当前的本地分支
+- 然后可以在本地分支中进行开发，正常的在自己的分支中进行操作
+- 应用版本更新前，将本地**变基**到远程的master分支中
+
+希望各位都能享受团队开发过程~
+
+
+
+## 1 commit备注规范
+
+**每一次上传都需要写commit！！**
+
+**每一次上传都需要写commit！！**
+
+**每一次上传都需要写commit！！**
+
+总体的格式是——
+
+```
+<操作缩写>(<区域>): <描述>
+```
+
+**请各位严格按照文档中的规范书写**
+
+- 操作缩写：这一部分中，将对每一个操作缩写作出一定的解释，届时请依照规范书写
+- 区域：区域并非必填项，当前仅有bugfix处需要用到
+- 描述：描述部分请尽可能用最简短的中文表述，**删去动词**表述，每一个描述部分不得超过50字
+- **多个操作中间请以英文分号和一个空格隔开**
+
+### 1.1 上传新内容
+
+> feat 分隔符 描述
+
+feat即feature，特性/特征。当模块增添了新功能时使用，feat后接英文冒号和一个空格，随后紧接新完成的功能名称，如：
+
+```
+feat: 登录功能
+
+feat: 用户列表查询
+
+feat: 蓝牙数据传输功能
+```
+
+**十分不建议一次性上传多个功能**，若实在有需求，请写作 feats ，并将所做功能一一列举，如：
+
+```
+feats: Redis查询工具、MySQL数据库查询工具、登录校验Spring Security工具
+```
+
+### 1.2 修复bug
+
+> bugfix(有问题的东西) 分隔符 描述
+
+bugfix即bug fix，修复bug。当修复了模块中的bug时使用，bugfix后接英文括号，括号内书写有问题的功能，随后接英文冒号和一个空格，最后写出修复的内容；若有多个修复，请用复数bugfixes，如：
+
+```
+bugfix(登录校验): 登录校验验证码异常显示
+
+bugfixes(数据预处理): 数据预处理模块接收数据异常
+```
+
+### 1.3 增/删除/改说明文档docs
+
+> docs 分隔符 描述
+
+docs即document，文档。当项目中的项目说明书发生了更新或迭代时使用，docs后接英文冒号和一个空格，最后写出增加或修改的内容，调整数量不限，但统一使用复数形式，说明内容中请尽可能以**“增加” “删除” “修改”**等字眼开头，如：
+
+```
+docs: 修改了错误的数据，添加了一些可用的测试数据
+
+docs: 增加了commit规范——docs
+```
+
+### 1.4 重写功能(重构) refactor
+
+> refactor 分隔符 描述
+
+refactor，重构。当重写了某一功能、文件名或文件时使用，往往是接口文档的规范有变或个人编程习惯不当造成的修改，包括一切类、方法的重命名和某一功能的命名重写、调用关系重写，**并非是bug的修复**。refactor后接英文冒号和一个空格，最后写出修改的内容；若有多个重构，仍用单数refactor，如：
+
+```
+refactor: 情绪数据存储功能命名
+
+refactor: AI模型调用情绪数据流程接口命名
+```
+
+### 1.5 性能优化perf
+
+> perf 分隔符 描述
+
+perf即perfect，使完美、使优化。当优化了某些不必要的判断或提供了更高效的功能解决方案造成的修改时使用。perf后接英文冒号，最后写出修改的内容；若有多个优化，仍用单数perf，如：
+
+```
+perf: 代码中不必要的条件判断
+
+perf: 微服务之间交互技术优化  http -> grpc
+```
+
+### 1.6  回滚到上一个版本revert
+
+> revert 分隔符 描述
+
+### 1.7 代码合并merge
+
+> merge 分隔符 描述
+
+merge即合并。一次代码合并代表版本号的一次更新推进，当代码达到一定的进度时使用，merge后接英文冒号和一个空格，最后写出新版本号，如：
+
+```
+merge: v1.1
+```
+
+### 1.8 删除文件
+
+> del 分隔符 描述
+
+del，delete，即删除。当有需要删除冗余文件时使用。**注意，删除代码中的冗余内容应为“perf”**。del后接英文冒号和一个空格，最后写一定的描述性文字，如：
+
+```
+del: 冗余css样式
+```
+
+### 1.9 未完待续
+
+
+
+## 2 仓库使用规范
+
+### 2.1 注意事项
+
+当前建议各位完成一个功能，就上传一次代码，希望各位要将一个功能**完全**完善后再上传，注意：
+
+- 每个人都有自己的分支，总体产品会有一个分支
+- 尽可能完成一个功能就上传到自己的分支中，尽可能不一次性做多个功能
+- 上传时__不能干扰他人的分支__，**仅在自己的分支内操作**
+- 根据完成情况，会不定时的对三个分支**合并**一次，随后更新版本号，再次开放分支
+- 若一次性做了多件事，如完成了bugfix和feat，二者之间请用英文分号和一个空格隔开
+
+
+### 2.2 仓库使用
+
+有关GitHub或Git的相关使用，在项目开始后不会再答疑，请各位在学习过程中一定要认真学习、注意细节~
+
+
+
+## 3 最后
+
+各位加油🎇
+
