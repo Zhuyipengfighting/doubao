@@ -1,10 +1,9 @@
-package com.doubao.order;
+package com.doubao.order.service;
 
 
-import com.doubao.order.Order;
-import com.doubao.order.OrderItem;
-import com.doubao.order.OrderItemRepository;
-import com.doubao.order.OrderRepository;
+import com.doubao.order.repository.OrderItemRepository;
+import com.doubao.order.repository.OrderRepository;
+import com.doubao.order.entity.Order;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

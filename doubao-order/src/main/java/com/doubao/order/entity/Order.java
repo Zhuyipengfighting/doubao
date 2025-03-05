@@ -1,35 +1,31 @@
-package com.doubao.order;
+package com.doubao.order.entity;
 
 import lombok.Data;
-
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "sys_order_item")
+@Table(name = "sys_order")
 @Data
-public class OrderItem {
+public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long item_id;
-
-    @Column(nullable = false)
     private Long orderId;
 
     @Column(nullable = false)
-    private Long productId;
-
-    @Column(nullable = false)
-    private String productName;
-
-    @Column(nullable = false)
-    private Double price;
-
-    @Column(nullable = false)
-    private Integer quantity;
+    private Long userId;
 
     @Column(nullable = false)
     private Double totalAmount;
+
+    @Column(nullable = false)
+    private Integer status;
+
+    private String paymentMethod;
+
+    private Date paymentTime;
+
+    private Date cancelTime;
 
     @Column(updatable = false)
     private Date createTime;
