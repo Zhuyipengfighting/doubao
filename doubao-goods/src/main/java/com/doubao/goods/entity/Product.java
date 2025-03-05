@@ -1,4 +1,4 @@
-package com.ruoyi.goods.entity;
+package com.doubao.goods.entity;
 
 import javax.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;

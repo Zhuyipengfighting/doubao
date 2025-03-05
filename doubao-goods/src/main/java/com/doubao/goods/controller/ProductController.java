@@ -1,7 +1,7 @@
-package com.ruoyi.goods.controller;
+package com.doubao.goods.controller;
 
-import com.ruoyi.goods.entity.Product;
-import com.ruoyi.goods.service.ProductService;
+import com.doubao.goods.entity.Product;
+import com.doubao.goods.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

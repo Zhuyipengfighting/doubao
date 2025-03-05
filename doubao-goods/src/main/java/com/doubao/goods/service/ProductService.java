@@ -1,15 +1,11 @@
-package com.ruoyi.goods.service;
+package com.doubao.goods.service;
 
+import com.doubao.goods.entity.Product;
+import com.doubao.goods.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 
-import com.ruoyi.goods.entity.Product;
-import com.ruoyi.goods.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.BeanUtils;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
