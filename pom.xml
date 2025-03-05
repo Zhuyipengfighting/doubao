@@ -197,6 +197,20 @@
                 <version>${doubao.version}</version>
             </dependency>
 
+            <!-- 订单服务 -->
+            <dependency>
+                <groupId>com.doubao</groupId>
+                <artifactId>doubao-order</artifactId>
+                <version>${doubao.version}</version>
+            </dependency>
+
+            <!-- 商品服务 -->
+            <dependency>
+                <groupId>com.doubao</groupId>
+                <artifactId>doubao-goods</artifactId>
+                <version>${doubao.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -207,6 +221,8 @@
         <module>doubao-quartz</module>
         <module>doubao-generator</module>
         <module>doubao-common</module>
+        <module>doubao-goods</module>
+        <module>doubao-order</module>
     </modules>
     <packaging>pom</packaging>
 

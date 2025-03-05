@@ -75,6 +75,15 @@
             <artifactId>doubao-generator</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.doubao</groupId>
+            <artifactId>doubao-goods</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.doubao</groupId>
+            <artifactId>doubao-order</artifactId>
+        </dependency>
 
     </dependencies>
 
