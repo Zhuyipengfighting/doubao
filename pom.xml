@@ -193,8 +193,7 @@
         <module>doubao-generator</module>
         <module>doubao-common</module>
         <module>doubao-goods</module>
-
-        <module>doubao-shoppingcart</module>
+        <module>doubao-order</module>
     </modules>
     <packaging>pom</packaging>
 
