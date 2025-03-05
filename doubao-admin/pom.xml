@@ -24,7 +24,19 @@
             <optional>true</optional> <!-- 表示依赖不会传递 -->
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>2020.0.6</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
 
+        <!-- Spring Cloud starter for Consul (加入 Consul 依赖) -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+        </dependency>
 
         <!-- swagger3-->
         <dependency>
@@ -61,6 +73,16 @@
         <dependency>
             <groupId>com.doubao</groupId>
             <artifactId>doubao-generator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.doubao</groupId>
+            <artifactId>doubao-goods</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.doubao</groupId>
+            <artifactId>doubao-order</artifactId>
         </dependency>
 
     </dependencies>

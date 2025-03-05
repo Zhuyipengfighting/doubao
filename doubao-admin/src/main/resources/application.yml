@@ -47,6 +47,21 @@ user:
 
 # Spring配置
 spring:
+  # 设置服务名称
+  application:
+    name: doubao-zhilian-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        health-check-path: /actuator/health
+        health-check-interval: 10s
+      config:
+        enabled: true
+        prefix: config
+        default-context: application
+        profile-separator: '-'
   # 资源信息
   messages:
     # 国际化资源文件路径
@@ -91,11 +106,11 @@ spring:
 # token配置
 token:
   # 令牌自定义标识
-  header: Authorization
+  header: ZhiLian
   # 令牌密钥
   secret: abcdefghijklmnopqrstuvwxyz
-  # 令牌有效期（默认30分钟）
-  expireTime: 30
+  # 令牌有效期（默认40分钟）
+  expireTime: 40
 
 # MyBatis配置
 mybatis:

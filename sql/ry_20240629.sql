@@ -70,7 +70,8 @@ create table sys_user (
 -- 初始化-用户信息表数据
 -- ----------------------------
 insert into sys_user values(1,  103, 'admin', '智联', '00', 'db@163.com', '15888888888', '1', '', '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2', '0', '0', '127.0.0.1', sysdate(), 'admin', sysdate(), '', null, '管理员');
-insert into sys_user values(2,  105, 'db',    '智联', '00', 'db@qq.com',  '15666666666', '1', '', '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2', '0', '0', '127.0.0.1', sysdate(), 'admin', sysdate(), '', null, '测试员');
+insert into sys_user values(2,  105, 'db_seller',    '智联', '00', 'db_seller@qq.com',  '15777777777', '1', '', '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2', '0', '0', '127.0.0.1', sysdate(), 'admin', sysdate(), '', null, '测试员');
+insert into sys_user values(3,  105, 'db_customer',    '智联', '00', 'db_customer@qq.com',  '15666666666', '1', '', '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2', '0', '0', '127.0.0.1', sysdate(), 'admin', sysdate(), '', null, '测试员');
 
 
 -- ----------------------------
@@ -127,7 +128,8 @@ create table sys_role (
 -- 初始化-角色信息表数据
 -- ----------------------------
 insert into sys_role values('1', '超级管理员',  'admin',  1, 1, 1, 1, '0', '0', 'admin', sysdate(), '', null, '超级管理员');
-insert into sys_role values('2', '普通角色',    'common', 2, 2, 1, 1, '0', '0', 'admin', sysdate(), '', null, '普通角色');
+insert into sys_role values('2', '商家',    'common', 2, 2, 1, 1, '0', '0', 'admin', sysdate(), '', null, '普通角色');
+insert into sys_role values('3', '顾客',    'common', 2, 2, 1, 1, '0', '0', 'admin', sysdate(), '', null, '普通角色');
 
 
 -- ----------------------------
@@ -711,9 +713,9 @@ create table sys_product (
                              product_id      bigint(20)    not null auto_increment      comment '商品ID',
                              product_name    varchar(100)  not null                     comment '商品名称',
                              product_desc    text          default null                 comment '商品描述',
-                             category_id     bigint(20)    not null                     comment '分类ID',
+                             category_id     bigint(20)    null                 comment '分类ID',
                              brand_id        bigint(20)    default null                 comment '品牌ID',
-                             supplier_id     INT UNSIGNED NOT NULL                      comment '商品的供应商ID',
+                             supplier_id     INT UNSIGNED  NULL                      comment '商品的供应商ID',
                              price          decimal(10,2)  not null                     comment '商品价格',
                              stock           int(10)       not null default 0           comment '库存数量',
                              status          tinyint(1)    default 1                    comment '商品状态（1上架 0下架）',
