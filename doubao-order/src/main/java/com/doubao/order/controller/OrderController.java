@@ -1,9 +1,10 @@
-package com.doubao.order;
+package com.doubao.order.controller;
 
+import com.doubao.order.service.OrderService;
+import com.doubao.order.entity.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.doubao.order.*;
 
 import java.util.List;
 

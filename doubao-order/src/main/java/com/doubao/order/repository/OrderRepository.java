@@ -1,7 +1,7 @@
-package com.doubao.order;
+package com.doubao.order.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.doubao.order.Order;
+import com.doubao.order.entity.Order;
 
 import java.util.Date;
 import java.util.List;
