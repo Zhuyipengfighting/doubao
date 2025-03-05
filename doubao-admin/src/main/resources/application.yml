@@ -47,6 +47,21 @@ user:
 
 # Spring配置
 spring:
+  # 设置服务名称
+  application:
+    name: doubao-zhilian-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        health-check-path: /actuator/health
+        health-check-interval: 10s
+      config:
+        enabled: true
+        prefix: config
+        default-context: application
+        profile-separator: '-'
   # 资源信息
   messages:
     # 国际化资源文件路径
