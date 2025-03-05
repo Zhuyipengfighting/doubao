@@ -89,6 +89,7 @@ public class CaptchaController
 
         ajax.put("uuid", uuid);
         ajax.put("img", Base64.encode(os.toByteArray()));
+        ajax.put("capStr_为了展示，临时加上去的", capStr);
         return ajax;
     }
 }
